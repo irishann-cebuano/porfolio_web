@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+     background: linear-gradient(90deg, #0b3d91 10%, #000000 100%);
+}
+
+.upper-cont{
+  display:inline-flex;
+  
+
+}
+
+.navigations{
+    text-align: end;
+    padding: 30px;
+    background: rgba(255, 225, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 225, 255, 0.02);
+    margin-bottom: 50px;
+}
+.navigations a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #00eaff;
+    transition: width 0.3s;
+}
+.navigations a:hover::after{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 40px;
+} 
+ul li{
+    text-decoration: none;
+    padding-right: 40px;
+   
+}
+li a{
+    text-decoration: none;
+    color: #F1F1F1;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.projects-section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#00E5FF;
+}
+
+.project-filters {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    margin: 5px;
+    border: none;
+    background: #1b1e2b;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #00E5FF;
+    color: #0d0f1a;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: #1b1e2b;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: 0.3s ease, transform 0.3s;
+}
+
+.project-card:hover {
+    border-color:#00E5FF;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 255, 234, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00E5FF;  
+    opacity: 1;      
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;  
+    opacity: 1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tech-stack i {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #00E5FF;
+}
+.buttons a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.live {
+    background: #00E5FF;
+    color: #0d0f1a;
+}
+
+.live:hover {
+    background: #00E5FF;
+}
+
+.code {
+    background: transparent;
+    border: 1px solid #00E5FF;;
+    color: #00E5FF;
+}
+
+.code:hover {
+    background: #00E5FF;
+    color: #0d0f1a;
+}

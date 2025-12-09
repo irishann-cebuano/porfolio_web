@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+     background: linear-gradient(90deg, #0b3d91 10%, #000000 100%);
+}
+
+.upper-cont{
+  display:inline-flex;
+
+}
+
+.navigations{
+    text-align: end;
+    padding: 30px;
+    background: rgba(255, 225, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 225, 255, 0.02);
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 40px;
+} 
+ul li{
+    text-decoration: none;
+    padding-right: 40px;
+   
+}
+li a{
+    text-decoration: none;
+    color: #F1F1F1;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.navigations a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #00eaff;
+    transition: width 0.3s;
+}
+.navigations a:hover::after{
+    width: 100%;
+}
+.skills-section {
+    color: #fff;
+    padding: 40px;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.skill-card {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 195, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.skill-card i {
+    font-size: 2.3rem;
+    color: #00eaff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.bars-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 6px #00eaff;
+    text-align: center;
+}
+
+.skill-bars .bar {
+    margin-bottom: 20px;
+}
+
+.skill-bars p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #00eaff, #007bff);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00eaff;
+}
+   

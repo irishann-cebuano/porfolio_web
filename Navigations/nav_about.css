@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+     background: linear-gradient(90deg, #0b3d91 10%, #000000 100%);
+}
+
+.upper-cont{
+  display:inline-flex;
+
+}
+
+.navigations{
+    text-align: end;
+    padding: 30px;
+    background: rgba(255, 225, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 225, 255, 0.02);
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 40px;
+} 
+ul li{
+    text-decoration: none;
+    padding-right: 40px;
+   
+}
+li a{
+    text-decoration: none;
+    color: #F1F1F1;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.navigations a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #00eaff;
+    transition: width 0.3s;
+}
+.navigations a:hover::after{
+    width: 100%;
+}
+
+.bio{
+    display:inline-flex;
+    margin-top: 20px;
+}
+.profile-pic{
+   display: flex;
+   justify-content: left;
+}
+.profile-pic img{
+    border-radius: 10px;
+    box-shadow: 0 0 20px ggba(0, 195, 255, 0.5);
+    border: 1px solid #00c3ff;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+    margin-left: 80px;
+    margin-top: 150px;
+    margin-right: 20px;
+}
+.profile-pic img:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+.text-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 5px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+.who-i-am{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    
+}
+.who-i-am h4, .my-approach h4{
+    color: #00FFFF;
+    text-shadow: 0 0 8px #00eaff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+ .my-approach p{
+    color: #D9D9D9;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    
+}
+.who-i-am p{
+    color: #D9D9D9;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.my-approach{
+    flex: 1;
+    margin-right: 50px;
+    
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 70px;
+    margin-top: -250px;
+    margin-left: 30px;
+}
+
+.personal-info h2{
+    color: #00FFFF;
+    text-shadow: 0 0 8px #00eaff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+.info.grid{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.info-item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #F1F1F1;
+}
+span{
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#D9D9D9;
+}
+.icon{
+    color: #00FFFF;
+    font-size: 24px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+.info-item i:hover{
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+    transform: translate(5px);
+    transition: 0.3s ease;
+}
+.tech-stack{
+    margin-top: -300px;
+    padding-left: 900px;
+
+}
+.tech-stack h2{
+   color: #00eaff;
+   text-shadow: 0 0 8px #00eaff;
+   margin-bottom: 15px;
+   letter-spacing: 1px;
+}
+.tech-stack ul{
+    list-style: none;
+    padding:0;
+    justify-content: right;
+    display: block;
+    align-items: right;
+}
+
+.tech-stack li{
+    font-size: 1.1rem;
+    color: #d9d9d9;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.tech-stack i{
+   font-size: 1.5rem;
+   color: #00eaff;
+   text-shadow: 0 0 10px #00eaff;
+
+}
